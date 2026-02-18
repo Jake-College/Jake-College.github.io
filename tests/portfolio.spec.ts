@@ -43,7 +43,7 @@ test('has at least one section', async ({page}) => {
 
 test('has at least one paragraph', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const para = page.locator('p');
+  const para = page.locator('p').first();
   await expect(para).not.toBeEmpty();
 });
 
