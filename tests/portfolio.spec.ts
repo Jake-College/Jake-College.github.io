@@ -37,7 +37,7 @@ test('has footer', async ({page}) => {
 
 test('has at least one section', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const section = page.locator('section');
+  const section = page.locator('section').first();
   await expect(section).not.toBeEmpty();
 });
 
