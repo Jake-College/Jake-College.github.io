@@ -48,7 +48,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #6E74E2;
+    color: #432194;
 }
 
 nav a:not(:last-of-type) {
@@ -56,7 +56,7 @@ nav a:not(:last-of-type) {
 }
 
 nav a:hover {
-    text-decoration: underline dashed #6E74E2 1px;
+    text-decoration: underline dashed #432194 1px;
 }
 
 body {
@@ -126,7 +126,7 @@ th, td {
 
 .full__purple_band {
     width: 100%;
-    background: #6E74E2;
+    background: #432194;
 }
 
 .full__purple_band :is(h1, h2, h3, h4, h5, h6) {
