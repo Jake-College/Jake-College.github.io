@@ -43,19 +43,19 @@ test('has at least one section', async ({page}) => {
 
 test('has at least one paragraph', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const para = page.locator('p').first();
+  const para = page.locator('p');
   await expect(para).not.toBeEmpty();
 });
 
 test('has a main element', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const main = page.locator('main').first();
-  await expect(main).toBeAttached();
+  const main = page.locator('main');
+  await expect(main).not.toBeEmpty();
 });
 
 test('has an img element', async ({page}) => {
   await page.goto(process.env.BASE_URL);
-  const img = page.getByRole('img').first();
+  const img = page.getByRole('img');
   await expect(img).not.toBeNull();
 });
 
