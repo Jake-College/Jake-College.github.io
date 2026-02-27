@@ -6,8 +6,8 @@ html {
     font-size: 12pt;
 }
 
-.colored {
-    background: #CFF9F8;
+header {
+    background: #cff9f8;
     height: 3rem;
     align-items: center;
     display: grid;
