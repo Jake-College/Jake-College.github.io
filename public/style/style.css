@@ -1,0 +1,16 @@
+html {
+    font-family: "inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12pt;
+}
+
+.colored {
+    background: #CFF9F8;
+    height: 3rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3rem;
+}
