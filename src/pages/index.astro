@@ -1,26 +1,20 @@
 ---
 const pageTitle = "Landing";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import section1 from '../components/Sec1.astro'
-import section2 from '../components/Sec2.astro'
-import section3 from '../components/Sec3.astro'
+import '../components/Abtme.astro'
+import '../components/Skills.astro'
+import '../components/Projects.astro'
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
 	Lorem ipsum.
-	<section>
-		<section1>
-			
-		</section1>
-	</section>
-	<section>
-		<section2>
-			
-		</section2>
-	</section>
-	<section>
-		<section3>
-			
-		</section3>	
-	</section>
+	<Abtme>
+		
+	</Abtme>
+	<section2>
+		
+	</section2>
+	<section3>
+		
+	</section3>	
 </BaseLayout>
