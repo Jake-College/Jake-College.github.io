@@ -17,7 +17,7 @@ header {
 
 section {
     background: #cff9f8;
-    height: 3rem;
+    height: 1rem;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,8 +25,49 @@ section {
     margin: 5rem;
 }
 
+.AbtMe {
+    background: #222;
+    border: 2px solid #36D6FA;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 2.5rem 0px #36D6FA, inset 0px 0px 2.5rem 0px #36D6FA;
+    color: #cff9f8;
+    height: 18rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    margin: 5rem;
+}
+
+.Skills {
+    background: #222;
+    border: 2px solid #36D6FA;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 2.5rem 0px #36D6FA, inset 0px 0px 2.5rem 0px #36D6FA;
+    color: #cff9f8;
+    height: 18rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    margin: 5rem;
+}
+
+.Projects {
+    background: #222;
+    border: 2px solid #36D6FA;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 2.5rem 0px #36D6FA, inset 0px 0px 2.5rem 0px #36D6FA;
+    color: #cff9f8;
+    height: 30rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    margin: 5rem;
+}
 
 body {
     margin: 0;
-    background: #222;
+    background: linear-gradient(#222,#574921);
 }
