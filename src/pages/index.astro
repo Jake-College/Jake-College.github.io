@@ -1,9 +1,9 @@
 ---
 const pageTitle = "Landing";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import '../components/Abtme.astro'
-import '../components/Skills.astro'
-import '../components/Projects.astro'
+import Abtme from '../components/Abtme.astro'
+import Skills from '../components/Skills.astro'
+import Projects from '../components/Projects.astro'
 ---
 <BaseLayout pageTitle = {pageTitle}>
     <!-- astro <slot /> -->
@@ -11,10 +11,10 @@ import '../components/Projects.astro'
 	<Abtme>
 		
 	</Abtme>
-	<section2>
+	<Skills>
 		
-	</section2>
-	<section3>
+	</Skills>
+	<Projects>
 		
-	</section3>	
+	</Projects>	
 </BaseLayout>
