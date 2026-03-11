@@ -102,10 +102,41 @@ th, td {
     border: 1px solid #D9D9D9;
 }
 
+#menu {
+    position: relative;
+}
+
 #search {
     margin: 0 auto;
     width: 100%;
+    position:relative;
 }
+
+#search button {
+    background: none;
+    position: absolute;
+    right: .5rem;
+    cursor: pointer;
+    top: .25rem;
+    border: none;
+}
+
+.mode-toggle {
+    position: relative;
+    width: 2rem;
+    height: 1rem;
+
+}
+
+.mode-toggle input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    background: gray
+}
+
 
 .full__three_column {
     display: grid;
