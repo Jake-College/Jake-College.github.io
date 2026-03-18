@@ -8,21 +8,27 @@
     --webco-color-gray: #D9D9D9;
     --webco-printer-black: #222;
     --webco-white: #fff;
+    --band-background: var(--webco-color-purple-bg);
+    --band-text: var(--webco-white);
+    --major-page-elements: var(--webco-printer-black);
 }
 
 :root[data-theme="dark"] {
     background: var(--webco-printer-black);
+    --band-background: var(--webco-white);
+    --band-text: var(--webco-color-purple-bg);
+    --major-page-elements: var(--webco-white);
 }
 
 * {
     margin: 0;
     line-height: 2rem;
-    color: var(--webco-printer-black);
+    color: var(--major-page-elements);
 }
 
 ul, li, i, b, em, strong {
-    color: var(--webco-white);
-}
+    color: var(--major-page-elements);
+}   
 
 h1, h2, h3, h4, h5, h6 {
     padding: 2rem 0;
@@ -94,6 +100,7 @@ article {
     overflow: hidden;
     text-wrap: balance;
     padding-right: 1rem;
+    transition: 2s;
 }
 
 article p {
@@ -178,6 +185,25 @@ input:checked + .slider:before {
     background: var(--webco-white);
 }
 
+.auto-suggest {
+    list-style-type: none;
+    position: absolute;
+    background-color: var(--webco-white);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    border: var(--webco-color-gray) 1px solid;
+}
+
+.auto-suggest-item {
+    color: var(--webco-printer-black)
+}
+.auto-suggest-item:hover {
+    background-color: var(--webco-color-purple-bg);
+    color: var(--webco-white);
+    border-radius: 8px;
+}
+
 .full__three_column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -197,11 +223,11 @@ input:checked + .slider:before {
 
 .full__purple_band {
     width: 100%;
-    background: var(--webco-color-purple-bg);
+    background: var(--band-background);
 } 
 
 .full__purple_band :is(h1, h2, h3, h4, h5, h6, p) {
-    color: var(--webco-white);
+    color: var(--band-text);
 }
 
 .input__rounded {
