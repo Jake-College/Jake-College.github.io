@@ -123,6 +123,7 @@ th, td {
 
 .mode-toggle {
     position: relative;
+    top: .125rem;
     width: 2rem;
     height: 1rem;
 
@@ -134,9 +135,29 @@ th, td {
 
 .slider {
     position: absolute;
-    background: gray
+    background: var(--webco-color-purple-bg);
+    border-radius: 34px;
+    cursor: pointer;
+    width: 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
+.slider:before{
+    position: absolute;
+    background: var(--webco-white);
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    left: 0;
+}
+
+input:checked+.slider{
+
+}
 
 .full__three_column {
     display: grid;
