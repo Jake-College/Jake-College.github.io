@@ -185,6 +185,57 @@ input:checked + .slider:before {
     background: var(--webco-white);
 }
 
+.image-slider {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.image-slider ul {
+    height: 100%;
+    padding: 0;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.image-slider li {
+    height: 100%;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+}
+
+.image-slider img {
+    height: 100%;
+    transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.Buttons {
+    position: relative;
+    display: flex;
+    top: 50%;
+    z-index: 10;
+}
+
+.Left-Button {
+    position: left;
+    border: none;
+    background: none;
+    scale: 400%;
+    opacity: 66%;
+    left: 4rem;
+}
+
+.Right-Button {
+    position: right;
+    border: none;
+    background: none;
+    scale: 400%;
+    opacity: 66%;
+    right: 40rem;
+}
+
 .auto-suggest {
     list-style-type: none;
     position: absolute;
@@ -305,5 +356,3 @@ input:checked + .slider:before {
     position: relative;
     width: 50vw;
   }
-
-}
