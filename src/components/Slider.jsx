@@ -17,14 +17,12 @@ const Slider = ({slides}) => {
 
     return (
         <div className = "image-slider">
-            <div className = "Buttons">
                 <button class = "Left-Button">
                     <i class="fa-solid fa-circle-arrow-left"></i>
                 </button>
                 <button class = "Right-Button">
                     <i class="fa-solid fa-circle-arrow-right"></i>
                 </button>
-            </div>
             <ul>
                 {slides.map((slide, index) => (
                     <li key = {index} className = {index === currentIndex ? "active" : ""}>
