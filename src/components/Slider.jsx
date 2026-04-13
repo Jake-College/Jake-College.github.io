@@ -11,11 +11,17 @@ const Slider = ({slides}) => {
     // }
     
     const buttonPush = (evt) => {
-        if (evt.target.className = "Right-Button") {
+        if (evt.target.className === "fa-solid fa-circle-arrow-right") {
             if (currentIndex === slides.length -1) {
                 return setCurrentIndex(0);
             }
             return setCurrentIndex(currentIndex + 1);
+        }
+        else if (evt.target.className === "fa-solid fa-circle-arrow-left") {
+            if (currentIndex === 0) {
+                return setCurrentIndex(slides.length -1);
+            }
+            return setCurrentIndex(currentIndex - 1);
         }
     }
     
@@ -27,11 +33,11 @@ const Slider = ({slides}) => {
     
     return (
         <div className = "image-slider">
-                <button class = "Left-Button" onClick={buttonPush}>
-                    <i class="fa-solid fa-circle-arrow-left"></i>
+                <button className = "Left-Button">
+                    <i class="fa-solid fa-circle-arrow-left" onClick={buttonPush}></i>
                 </button>
-                <button class = "Right-Button" onClick={buttonPush}>
-                    <i class="fa-solid fa-circle-arrow-right"></i>
+                <button className = "Right-Button">
+                    <i className = "fa-solid fa-circle-arrow-right" onClick={buttonPush}></i>
                 </button>
             <ul>
                 {slides.map((slide, index) => (
