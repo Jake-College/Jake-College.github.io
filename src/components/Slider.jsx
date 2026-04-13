@@ -10,14 +10,15 @@ const Slider = ({slides}) => {
     //     return setCurrentIndex(currentIndex + 1);
     // }
     
-    const buttonPush = () => {
-        const clickedR = (evt) => {
+    const buttonPush = (evt) => {
+        if (evt.target.className = "Right-Button") {
             if (currentIndex === slides.length -1) {
                 return setCurrentIndex(0);
             }
-            return setCurrentIndex(currentIndex + 1)
+            return setCurrentIndex(currentIndex + 1);
         }
     }
+    
     
     // useEffect(() => {
     //     const interval = setInterval(() => {autoScroll()}, 3000);
@@ -26,10 +27,10 @@ const Slider = ({slides}) => {
     
     return (
         <div className = "image-slider">
-                <button class = "Left-Button">
+                <button class = "Left-Button" onClick={buttonPush}>
                     <i class="fa-solid fa-circle-arrow-left"></i>
                 </button>
-                <button class = "Right-Button" onClick={clickedR}>
+                <button class = "Right-Button" onClick={buttonPush}>
                     <i class="fa-solid fa-circle-arrow-right"></i>
                 </button>
             <ul>
