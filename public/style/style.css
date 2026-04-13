@@ -213,6 +213,7 @@ input:checked + .slider:before {
 
 .Left-Button {
     position: absolute;
+    cursor: pointer;
     top: 50%;
     z-index: 10;
     border: none;
@@ -224,6 +225,7 @@ input:checked + .slider:before {
 
 .Right-Button {
     position: absolute;
+    cursor: pointer;
     top: 50%;
     z-index: 10;
     border: none;
