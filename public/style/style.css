@@ -187,7 +187,6 @@ input:checked + .slider:before {
 
 .image-slider {
     position: relative;
-    height: 50vh;
     overflow: hidden;
     width: 95vw;
     margin: 0 auto;
@@ -207,8 +206,8 @@ input:checked + .slider:before {
 }
 
 .image-slider img {
-    width: calc(95vw/3-(4%));
-    height: 100%;
+    width: calc(95vw / 3 - 2rem);
+    height: auto;
     transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
