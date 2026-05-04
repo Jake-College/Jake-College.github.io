@@ -1,65 +1,15 @@
+---
+import Skill from './Skill.astro';
+const skills = [
+    { name: "CSS3", logo: "/img/CSS3-logo.png", level: 3 },
+    { name: "Figma", logo: "/img/Figma-logo.png", level: 2 },
+    { name: "Python", logo: "/img/Python-logo.png", level: 4 },
+    { name: "SQLite", logo: "/img/SQLite.jpg", level: 3 },
+    { name: "Microsoft Excel", logo: "/img/Microsoft_Excel.png", level: 4 },
+    { name: "JavaScript", logo: "/img/JavaScript-logo.png", level: 4 },
+    { name: "HTML5", logo: "/img/HTML5-logo.png", level: 4 }
+]
+---
 <section id ="Skills">
-    <section class = "Skill">
-        <img src = "/img/CSS3-logo.png" width = 50% height="auto" alt = "The CSS3 Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/Figma-logo.png" width = 50% height="auto" alt = "The Figma Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/Python-logo.png" width = 50% height="auto" alt = "The Python Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/SQLite.jpg" width = 50% height="auto" alt = "The SQLite Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/Microsoft_Excel.png" width = 50% height="auto" alt = "The Microsoft Excel Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/JavaScript-logo.png" width = 50% height="auto" alt = "The Javascript Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <img src = "/img/HTML5-logo.png" width = 50% height="auto" alt = "The HTML5  Logo."/>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
-    <section class = "Skill">
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-    </section>
+    {skills.map(skill => <Skill skill={skill} />)}
 </section>

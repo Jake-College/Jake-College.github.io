@@ -1,0 +1,9 @@
+---
+const skill = Astro.props.skill;
+---
+<ul class = "skill-list">
+    <li class = "skill-list-img"><img src = {skill.logo}></li>
+    <li>{skill.name}</li>
+    {Array.from({length: skill.level}).map((_, ) => <li><span class = "circle filled"></span></li>)}
+    {Array.from({length: 3 - skill.level}).map((_, ) => <li><span class = "circle unfilled"></span></li>)}
+</ul>
