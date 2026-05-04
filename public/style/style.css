@@ -50,6 +50,7 @@ body {
     border-radius: 3rem;
     grid-row: 1 / span 2;
     grid-column: 2;
+    margin-left: 10rem;
 }
 
 #Skills {
@@ -84,10 +85,6 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding: .1rem;
-}
-
-.Skill img{
-        background: transparent;
 }
 
 /* REACT TABS */
